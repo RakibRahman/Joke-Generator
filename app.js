@@ -9,8 +9,8 @@ const generateJokes = async () => {
     const fetchJokes = await fetch("https://api.chucknorris.io/jokes/random");
     const randomJoke = await fetchJokes.json();
     jokes.innerHTML = randomJoke.value;
-  } catch (error) {
-    console.log(`Server ${error}`);
+  } catch (down) {
+    console.log(`Server ${down}`);
   }
 };
 //Generate default joke
