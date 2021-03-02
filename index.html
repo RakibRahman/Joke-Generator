@@ -11,21 +11,37 @@
     />
   </head>
   <body>
-    <div class="flex items-center justify-center h-screen bg-red-100">
+    <div class="flex items-center justify-center h-screen bg-gray-100">
       <div
-        class="bg-gray-800 text-white font-bold rounded-lg border shadow-lg p-10 space-y-10 text-center"
+        class="bg-gray-800 text-white font-bold rounded-lg border shadow-lg p-10 space-y-10 text-center transition duration-100 w-9/12 h-9/12"
       >
-        <h3 class="capitalize">👉 Lets put a smile on that face</h3>
-        <div id="joke">Loading...</div>
+        <div class="flex flex-col justify-center items-center">
+          <h3 class="capitalize md:text-4xl animate-pulse">
+            👉 Lets put a smile on that face
+          </h3>
+          <img
+            class="w-14 mt-2"
+            src="https://assets.chucknorris.host/img/avatar/chuck-norris.png"
+            alt=""
+          />
+        </div>
+        <div
+          id="joke"
+          class="w-auto mx-auto leading-relaxed tracking-wide md:text-3xl"
+        >
+          <div
+            class="w-24 h-24 rounded-full bg-green-300 border-2 border-white bg-opacity-0 animate-ping mx-auto"
+          ></div>
+        </div>
         <button
           id="nxt-joke"
-          class="bg-white text-gray-500 py-1 px-2 rounded-lg"
+          class="bg-white text-gray-500 py-2 px-4 rounded-lg hover:bg-opacity-20 hover:text-white"
         >
-          Next One
+          Next One 🔥
         </button>
       </div>
     </div>
 
-    <script src="/app.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
   </body>
 </html>
